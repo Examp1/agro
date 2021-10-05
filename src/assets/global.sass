@@ -1,0 +1,80 @@
+@import './ico'
+@import 'sass/normalize'
+@import './Gill'
+*
+  font-family: Gilroy
+  box-sizing: border-box
+i
+  color: $c-gray-text-icons
+.container, .container-full 
+  width: 100%
+  margin: 0px auto
+  padding: 0px 15px
+  @media (min-width: 1200px)
+    max-width: $container-width
+  @media (max-width: 1200px)
+    max-width: $container-width
+  @media (max-width: 992px)
+    max-width: unset
+  @media (max-width: 768px)
+    max-width: unset
+  @media (max-width: 576px)
+    max-width: unset
+  &-full
+    padding: 0px
+.df
+  display: flex
+  &.jcsb
+    justify-content: space-between
+  &.jcsa  
+    justify-content: space-around
+  &.fdc
+    flex-direction: column
+    &-m
+      @media (max-width: 576px)
+        flex-direction: column
+  &.ait
+    align-items: center
+ul, ol
+  list-style-type: none
+  padding-left: 0px
+a
+  text-decoration: none
+  color: inherit
+button
+  cursor: pointer
+*
+  appearance: none
+  -webkit-appearance: none
+// text
+.light
+  font-weight: normal
+.bold
+  font-weight: bold
+.hr
+  width: 100%
+  height: 1px
+  background-color: $c-gray-light-1
+  display: block
+.vl
+  width: 1px
+  height: 100%
+  background-color: $c-gray-light-1
+  display: block
+img
+  max-width: 100%
+  object-fit: contain
+.flickity-page-dots
+  position: relative !important
+  bottom: 0px !important
+  margin-bottom: 10px !important
+.innerWrap .flickity-page-dots .dot
+  width: 55px
+  height: 3px
+  border-radius: 0px
+  &.is-selected
+    background-color: $c-green2
+.border-b
+  border-bottom: 4px solid $c-green2
+.pb-2
+  padding-bottom: 20px
