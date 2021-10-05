@@ -9,12 +9,12 @@
         <img src="../../../assets/img.png" alt="" />
       </div>
       <div class="r df fdc">
-        <div data-v-b4eef13c="" class="infoWarpper">
-          <span data-v-b4eef13c="">29 серпня 2021, 13:00</span
-          ><span data-v-b4eef13c=""
-            >145 <i data-v-b4eef13c="" class="ic-eye"></i
+        <div class="infoWarpper">
+          <span>29 серпня 2021, 13:00</span
+          ><span
+            >145 <i class="ic-eye"></i
           ></span>
-          <p data-v-b4eef13c="" class="title">
+          <p class="title">
             AGROGEAR. Збереження вологи. Кожне господарство обирає найкращі
             технології під свої умови
           </p>
