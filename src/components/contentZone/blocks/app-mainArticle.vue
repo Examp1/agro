@@ -47,6 +47,8 @@ export default {
 
 <style lang="sass" scoped>
 .wrapper
+	grid-column: 2
+	column-gap: 30px
 	@media (max-width: 768px)
 		flex-direction: column
 		.mainArticle
@@ -77,29 +79,33 @@ export default {
 				margin-right: 15px 
 				position: relative
 				&::before
-					content: ''
-					position: absolute
-					right: -15px
-					background-color: $c-gray-light-1
-					width: 1px
-					height: 100%
+					@media (min-width: 640px)
+						content: ''
+						position: absolute
+						right: -15px
+						background-color: $c-gray-light-1
+						width: 1px
+						height: 100%
 			.infoWarpper
 				margin-left: 15px
 				width: 50%
 				.title
 					@include subtitle-3
-
+	@media (max-width: 640px)
+		grid-row: 1
+		grid-column: unset
 .mainArticle::before
-	content: ''
-	position: absolute
-	height: 100%
-	width: 1px
-	background-color: $c-gray-light-1
-	top: 0px
-	right: -15px
+	@media (min-width: 640px)
+		content: ''
+		position: absolute
+		height: 100%
+		width: 1px
+		background-color: $c-gray-light-1
+		top: 0px
+		right: -15px
 .mainArticle, .bannerBlock
 	max-width: 408px
-	margin-right: 15px
+	// margin-right: 15px
 	position: relative
 	.title
 		@include subtitle-1
@@ -121,7 +127,5 @@ export default {
 	.desc
 		@include text-3
 .bannerBlock
-	max-width: $sidebar-width
-	margin-left: 15px
-	margin-right: 0px
+	max-width: 270px
 </style>

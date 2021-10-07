@@ -35,8 +35,17 @@ data() {
 
 <style lang="sass" scoped>
 .infoSection
+	width: 100%
 	background-color: $c-gray-light-0
 	text-align: center
+	grid-column: 1/3
+	@media (max-width: 640px)
+		grid-column: 1
+		ul
+			display: flex
+			flex-direction: column
+			li
+				margin-bottom: 10px
 	ul 
 		margin-left: 30px
 		li 

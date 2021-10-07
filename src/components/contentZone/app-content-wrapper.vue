@@ -1,13 +1,13 @@
 <template>
   <main>
-    <main-article></main-article>
+    <!-- <main-article></main-article> -->
     <br />
     <i class="hr"></i>
     <specialArticle></specialArticle>
     <div class="ads">
       <img src="https://via.placeholder.com/689x122" alt="" />
     </div>
-    <div class="df jcsb tablet-Lg">
+    <div class="articleAndSidebar">
       <div class="innerWrap df fdc">
         <article-list class="articleList"></article-list>
         <slider>
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import mainArticle from "./blocks/app-mainArticle.vue";
+// import mainArticle from "./blocks/app-mainArticle.vue";
 import specialArticle from "./blocks/app-specialArticle.vue";
 import articleList from "./blocks/app-articleList.vue";
 import rightSidebar from "./blocks/app-rSidebar.vue";
@@ -40,7 +40,7 @@ import slider from "./blocks/app-slider.vue";
 export default {
   name: "app-content-wrapper",
   components: {
-    mainArticle,
+    // mainArticle,
     specialArticle,
     articleList,
     rightSidebar,
@@ -68,7 +68,7 @@ export default {
     bottom: -15px
 .innerWrap
   // width: calc(70% - 15px)
-  max-width: 418px
+  // max-width: 418px
   @media (max-width: 768px)
     max-width: unset
 .test
@@ -84,7 +84,14 @@ export default {
 .dbSlider
   & > div
     width: calc(50% - 15px)
-.tablet-Lg
-  @media (max-width: 768px)
+  @media (max-width: 640px)
     flex-direction: column
+    & > div
+      width: 100%
+.articleAndSidebar
+  display: grid
+  grid-template-columns: auto 250px
+  grid-gap: 30px  
+  @media (max-width: 768px)
+    grid-template-columns: 1fr
 </style>

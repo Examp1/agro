@@ -29,10 +29,10 @@ export default {
 	&:last-of-type
 		margin-bottom: 15px
 	.l
-		width: 60%
+		width: 55%
 		margin-right: 10px
 	.r
-		width: 40%
+		width: 45%
 .article .title
 	@include subtitle-3
 .footerArticle

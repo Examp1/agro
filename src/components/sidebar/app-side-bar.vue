@@ -51,4 +51,10 @@ export default {
 			color: $c-white
 		&:not(:last-of-type)
 			margin-right: 5px
+aside
+	grid-column: 1
+	grid-row: 1/3
+	@media (max-width: 640px)
+		grid-row: 2
+		grid-column: unset
 </style>

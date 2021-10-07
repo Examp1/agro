@@ -74,6 +74,7 @@ aside
 		height: 100%
 		background-color: $c-gray-light-1
 		left: -15px
+		top: 0px
 .articleList
 	li
 		&:not(:last-of-type)
